@@ -1,0 +1,5 @@
+{
+  "name": "Zama Privacy Playground",
+  "description": "A fun, interactive 'Privacy Playground' where people can try tiny demos that show how Zama makes privacy and compute work together, without any heavy tech talk.",
+  "requestFramePermissions": []
+}
