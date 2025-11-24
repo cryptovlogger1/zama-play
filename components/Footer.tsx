@@ -16,17 +16,13 @@ const Footer: React.FC = () => {
 
   return (
     <>
-      <footer className="bg-black border-t border-gray-800 py-8">
-        <div className="container mx-auto px-6 text-center text-medium-gray text-sm">
-          <p className="mb-4">
-            © 2025 Privacy Playground • Inspired by Zama.ai
-            <br/>
-            Made with ❤️ by <a href="https://twitter.com/web3manish" target="_blank" rel="noopener noreferrer" className="text-zama-blue hover:underline">@web3manish</a>
+      <footer className="bg-black border-t border-gray-800 py-6">
+        <div className="container mx-auto px-6 flex flex-col sm:flex-row justify-center items-center gap-4 text-medium-gray text-sm">
+          <p>
+            Made with ❤️ by <a href="https://x.com/rohittmans" target="_blank" rel="noopener noreferrer" className="text-zama-blue hover:underline">Rohit</a>
           </p>
-          <div className="flex justify-center gap-6">
-            <button onClick={() => setShowPrivacyModal(true)} className="hover:text-zama-yellow transition-colors">Privacy</button>
-            <a href="https://twitter.com/web3manish" target="_blank" rel="noopener noreferrer" className="hover:text-zama-yellow transition-colors">Contact</a>
-          </div>
+          <span className="hidden sm:inline text-gray-700">|</span>
+          <button onClick={() => setShowPrivacyModal(true)} className="hover:text-zama-yellow transition-colors">Privacy</button>
         </div>
       </footer>
       {showPrivacyModal && <PrivacyModal onClose={() => setShowPrivacyModal(false)} />}

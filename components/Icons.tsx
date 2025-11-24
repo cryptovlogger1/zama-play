@@ -3,8 +3,8 @@ import React from 'react';
 
 export const ZamaLogo: React.FC<{ className?: string }> = ({ className }) => (
   <svg className={className} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M0 0H24V24H0V0Z" fill="#FFD400"/>
-    <path d="M6 6V9.33333H12.6667L6 18V14.6667H18V11.3333H11.3333L18 6V9.33333H6V6Z" fill="black"/>
+    <rect width="24" height="24" fill="#FFD400"/>
+    <path d="M5 5H19V9L9 15H19V19H5V15L15 9H5V5Z" fill="black"/>
   </svg>
 );
 
